@@ -21,5 +21,14 @@ namespace fukuv0518
         {
             button3.Visible = false;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            button1.Visible = false;
+            button2.Visible = false;
+            button3.Visible = false;
+            checkBox1.Visible = false;
+
+        }
     }
-    }
+}
