@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            namebtn = new Button();
             button2 = new Button();
             button3 = new Button();
             checkBox1 = new CheckBox();
             SuspendLayout();
             // 
-            // button1
+            // namebtn
             // 
-            button1.Location = new Point(132, 87);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "氏名";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            namebtn.Location = new Point(132, 87);
+            namebtn.Name = "namebtn";
+            namebtn.Size = new Size(75, 23);
+            namebtn.TabIndex = 0;
+            namebtn.Text = "氏名";
+            namebtn.UseVisualStyleBackColor = true;
+            namebtn.Click += button1_Click;
             // 
             // button2
             // 
@@ -83,16 +83,17 @@
             Controls.Add(checkBox1);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(namebtn);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button namebtn;
         private Button button2;
         private Button button3;
         private CheckBox checkBox1;

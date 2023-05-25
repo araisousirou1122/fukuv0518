@@ -9,7 +9,7 @@ namespace fukuv0518
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button1.Text = "araisoushirou";
+            namebtn.Text = "arai";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -24,11 +24,17 @@ namespace fukuv0518
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            button1.Visible = false;
+            namebtn.Visible = false;
             button2.Visible = false;
             button3.Visible = false;
             checkBox1.Visible = false;
+            BackColor = Color.Red;
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
